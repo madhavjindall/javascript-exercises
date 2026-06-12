@@ -17,12 +17,11 @@ const sumAll = function(a,b) {
 ) {
     return "ERROR";
 }
-    let sum = 0;
-
-    for (let i = min; i <= max; i++) {
-        sum += i;
+    let arr=[];
+    for(let i=Math.min(a,b);i<=Math.max(a,b);i++){
+        arr.push(i);
     }
-
+    let sum =arr.reduce((acc,n)=>acc+n);
     return sum;
 };
 
